@@ -1,4 +1,4 @@
-pipeline {
+ ipeline {
 
   agent any {
 
@@ -6,18 +6,18 @@ pipeline {
 
     stage("build"){
       steps{
-        sh 'npm install'
+        echo 'building the app' 
 
       }
     }
     stage("Test"){
       steps{
-
+        echo 'Testing the App'
       }
     }
         stage("Deploy"){
       steps{
-
+        echo 'Deploying the App'
       }
     }
   
